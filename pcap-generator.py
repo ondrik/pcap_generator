@@ -58,8 +58,8 @@ def createPcapFile(data, outfile):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='PCAP generator for ReDoS strings')
-    parser.add_argument('input', metavar='in')
-    parser.add_argument('output', metavar='out')
+    parser.add_argument('input', metavar='<input.txt>')
+    parser.add_argument('output', metavar='<output.pcap>')
     args = parser.parse_args()
 
     with open(args.input, "rb") as fd:
